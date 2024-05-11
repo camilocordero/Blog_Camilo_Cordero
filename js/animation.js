@@ -7,10 +7,6 @@ const state = {
   size: 10
 };
 
-const gui = new datGui.GUI();
-gui.addColor(state, "color");
-gui.add(state, "charset");
-const sizeCtrl = gui.add(state, "size").min(1).max(120).step(1);
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
