@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>holaputos
-    </title>
+    <title>Cuadro de Shell</title>
+    <style>
+        /* Estilos para el cuadro de shell */
+        .shell-box {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-y: scroll;
+            background-color: #f5f5f5;
+        }
+
+        .shell-output {
+            font-family: monospace;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="shell-box">
+        <pre class="shell-output"></pre>
+    </div>
+
+    <script>
+        // Ejemplo de cómo actualizar el contenido del cuadro de shell
+        const shellOutput = document.querySelector('.shell-output');
+        shellOutput.textContent = 'nmap -A scan 192.168.1.0/24';
+    </script>
 </body>
 </html>
